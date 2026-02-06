@@ -86,8 +86,21 @@ REST_FRAMEWORK = {
 }
 
 # CORS
-CORS_ALLOWED_ORIGINS = [o.strip() for o in os.getenv("CORS_ALLOWED_ORIGINS", "http://localhost:3000").split(",") if o.strip()]
+# CORS
+CORS_ALLOWED_ORIGINS = [
+    "https://expense-tracker-assignment-omega.vercel.app",
+]
+
 CORS_ALLOW_CREDENTIALS = True
+
+# Allowed hosts
+ALLOWED_HOSTS = [
+    ".onrender.com",
+    "localhost",
+    "127.0.0.1",
+]
+
+
 
 # Third-party API
 EXCHANGE_API_BASE = os.getenv("EXCHANGE_API_BASE", "https://api.exchangerate.host")
