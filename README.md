@@ -14,12 +14,6 @@ This repository contains a **complete, working** full-stack web app that matches
 - `backend/` → Django + DRF REST API
 - `frontend/` → Next.js UI
 
-You can split this into 2 public GitHub repos:
-- `expense-tracker-backend`
-- `expense-tracker-frontend`
-
----
-
 ## Features
 ### Entities
 - **Category**
